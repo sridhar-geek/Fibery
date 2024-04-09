@@ -1,9 +1,15 @@
+/** It is hero component shows welcome text, descrption and buttons to schedule meeting */
+
+//Imports from another components
 import UnicornImage from "../assests/UnicornImage.png";
 
+
 const Main = () => {
+
   return (
     <div>
       <main>
+        {/* Welcome Text */}
         <h1 className="text-center font-bold font-sans text-2xl mt-10 md:text-4xl">
           Turn Your Startup Idea into a Unicorn{" "}
         </h1>
@@ -12,8 +18,9 @@ const Main = () => {
             src={UnicornImage}
             alt="banner"
             className="h-56 mx-auto md:hidden"
-            />
-          <h4 className="font-bold text-slate-500" >
+          />
+          {/* Description */}
+          <h4 className="font-bold text-slate-500 md:mt-24">
             Dreaming of building the next big thing? Our team of experienced
             advisors can help you transform your startup idea into a thriving
             business.
@@ -22,7 +29,7 @@ const Main = () => {
             src={UnicornImage}
             alt="banner"
             className="h-64 hidden md:block"
-            />
+          />
         </div>
         <ul className="list-disc">
           <li>
@@ -38,9 +45,13 @@ const Main = () => {
             </p>
           </li>
         </ul>
-        <div className="flex justify-center gap-5">
-        <button className="btn signuBtn p-4">Book a Meeting</button>
-        <button className="btn outlineBtn">Contact Us</button>
+        {/* Buttons to schedule meeting */}
+        <div className="flex justify-center gap-5 mt-10">
+          {/* <Calendly /> */}
+          <button className="btn signuBtn p-4">
+            Book a Meeting
+          </button>
+          <button className="btn outlineBtn">Contact Us</button>
         </div>
       </main>
     </div>

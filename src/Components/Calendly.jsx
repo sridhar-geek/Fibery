@@ -1,3 +1,5 @@
+/** It is the main compoment which is imported from calendly and it shows calendly popup widget */
+
 import { PopupWidget } from "react-calendly";
 
 const Calendly = () => {
@@ -8,7 +10,7 @@ const Calendly = () => {
         rootElement={document.getElementById("root")}
         text="Click here to schedule!"
         textColor="#ffffff"
-        color="#00a2ff"
+        color="#334155"
       />
     </div>
   );

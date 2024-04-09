@@ -1,11 +1,15 @@
-
+import { useState } from "react";
 // Imports from anthor files
 import MobileHeader from "./MobileHeader";
-import Logo from '../../assests/FiberyLogo.png'
+import Logo from "../../assests/FiberyLogo.png";
 
-import { MdKeyboardArrowRight } from "react-icons/md";
+import { MdKeyboardArrowRight, MdKeyboardArrowDown } from "react-icons/md";
+
 
 const DesktopHeader = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen1, setIsOpen1] = useState(false)
+
   return (
     <div className="shadow-gray-600/30 shadow-sm p-4">
       <div className=" justify-between hidden md:flex ">
@@ -17,14 +21,14 @@ const DesktopHeader = () => {
           <div className="flex gap-5">
             <div className="navElements">
               Solution
-              <button>
-                <MdKeyboardArrowRight />
+              <button onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}
               </button>
             </div>
             <div className="navElements">
               Product{" "}
-              <button>
-                <MdKeyboardArrowRight />
+              <button onClick={() => setIsOpen1(!isOpen1)}>
+                {isOpen1 ? <MdKeyboardArrowDown /> : <MdKeyboardArrowRight />}
               </button>
             </div>
             <div className="navElements">Resources</div>

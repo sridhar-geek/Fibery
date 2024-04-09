@@ -1,8 +1,9 @@
+/** Header Component for Mobile Desktop  */
+
 import { useState } from "react";
 // Imports from another files
 import { IoMenu } from "react-icons/io5";
 import { RxCross2 } from "react-icons/rx";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import Logo from '../../assests/FiberyLogo.png'
 
 // sidebar component
@@ -20,7 +21,7 @@ const SideBar = ({ setSideBar, sideBar }) => {
         </button>
         {names.map((name) => (
           <div className="p-2 m-1 border-spacing-1 hover:scale-125 duration-900 hover:bg-slate-100">
-            <button className="flex justify-center items-center gap-2">{name} <MdKeyboardArrowRight/> </button>
+            <button className="flex justify-center items-center gap-2">{name} </button>
           </div>
         ))}
       </div>
@@ -30,7 +31,7 @@ const SideBar = ({ setSideBar, sideBar }) => {
 
 const MobileHeader = () => {
   const [sideBar, setSideBar] = useState(false);
-  console.log({ sideBar });
+
   return (
     <div className="justify-between flex items-center  md:hidden">
       <button onClick={() => setSideBar(!sideBar)}>

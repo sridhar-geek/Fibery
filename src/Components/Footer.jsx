@@ -10,13 +10,14 @@ const Footer = () => {
   return (
     <div>
       <div className="bg-slate-300">
-      <div className="container flex gap-4 text-xl justify-center w-full mb-10 mt-12 p-4">
-        <FaFacebook className="social" />
-        <FaInstagramSquare className="social" />
-        <FaTwitter className="social" />
-        <FaYoutube className="social" />
-        <FaDiscord className="social" />
-      </div>
+        {/* Social Media Links */}
+        <div className="container flex gap-4 text-xl justify-center w-full mb-10 mt-12 p-4">
+          <FaFacebook className="social" />
+          <FaInstagramSquare className="social" />
+          <FaTwitter className="social" />
+          <FaYoutube className="social" />
+          <FaDiscord className="social" />
+        </div>
       </div>
       <div className="grid sm:grid-cols-3 gap-3 items-center w-full ">
         <div className="footer">

@@ -6,6 +6,8 @@
 html{
     background-color: #ecf0f2;
 }
+
+
 @layer base{
     /* Header styles */
     .logo{
