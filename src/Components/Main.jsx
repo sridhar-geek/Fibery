@@ -2,10 +2,9 @@
 
 //Imports from another components
 import UnicornImage from "../assests/UnicornImage.png";
-
+import CustomButton from "./Calendly";
 
 const Main = () => {
-
   return (
     <div>
       <main>
@@ -47,11 +46,9 @@ const Main = () => {
         </ul>
         {/* Buttons to schedule meeting */}
         <div className="flex justify-center gap-5 mt-10">
-          {/* <Calendly /> */}
-          <button className="btn signuBtn p-4">
-            Book a Meeting
-          </button>
+          <CustomButton />
           <button className="btn outlineBtn">Contact Us</button>
+          {/* <CustomButtonExample /> */}
         </div>
       </main>
     </div>
