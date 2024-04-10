@@ -1,8 +1,8 @@
 # Fibery
-![Logo](src/assests/compressed_logo.png) 
+![Logo](src/assests/LogoCompressed.png) 
 
 ## Description
- **It is Meeting Booking Website. It uses Calendly to accomplish booking.**
+ **Meeting Scheduling Website. It uses Calendly to accomplish booking.**
 
 
-![demo](src/assests/demo_image.png)
+![demo](src/assests/website_image.png)
