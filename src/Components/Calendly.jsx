@@ -8,7 +8,7 @@ const Calendly = () => {
   return (
     <div>
       <button className="btn signuBtn p-4" onClick={() => setIsOpen(true)}>
-        Book another Meeting
+        Book Meeting
       </button>
       <PopupModal
         url="https://calendly.com/fiberdemo"
